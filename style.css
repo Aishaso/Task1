@@ -1,0 +1,239 @@
+body,
+ul,
+li,
+h1,
+h2,
+a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: #CDC2AE;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  width: 100vw !important;
+}
+header h1 {
+  font-size: 36px;
+  color: white;
+  border: 4px solid white;
+  padding: 10px 30px;
+  display: inline-block;
+  border-radius: 36px;
+}
+.banner {
+  position: relative;
+}
+.banner img {
+  max-width: 100%;
+  width: 100% !important;
+}
+.welcome {
+  /* background-color: gray; */
+  border-radius: 36px;
+  color:wheat;
+  /* box-shadow: ; */
+  padding: 30px;
+  position: absolute;
+  left: 30%;
+  top: 80%;
+  text-align: center !important;
+}
+.banner h2 {
+  font-size: 30px;
+}
+.banner h2 span {
+  font-size: 1.3em;
+}
+nav {
+  background-color: #f4f4f4;
+  padding: 20px;
+  position: sticky;
+  top: 106px;
+  margin-top: -6px;
+}
+nav ul {
+  white-space: nowrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex !important;
+  justify-content: center;
+  margin-right: 40px;
+}
+nav li {
+  width: 25%;
+  display: inline-block;
+  font-size: 24px;
+  justify-content: center;
+}
+nav li a {
+  text-decoration: none;
+  color: gray;
+  text-align: center;
+ padding-right: 20px !important;
+}
+a.join {
+  color: rgb(34, 23, 23) !important;
+}
+nav li.join {
+  color: gray;
+}
+main {
+  max-width: 100%;
+  width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+}
+article h2 {
+  color: rgb(35, 59, 59);
+}
+article p {
+  line-height: 2em;
+  color: gray;
+}
+.images {
+  text-align: center;
+  margin: 80px 0;
+  white-space: nowrap;
+}
+.images li {
+  display: inline-block;
+  width: 40%;
+  margin: 20px 5px;
+}
+.images li img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+section.join {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 60px 20px;
+  color: gray;
+  border-radius: 20px;
+}
+.join h2 {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 6px;
+}
+form input {
+  margin: 20px 0;
+  padding: 10px 20px;
+  font-size: 24px;
+  border-radius: 28px;
+  border: 4px solid white;
+}
+.icons ul{
+  display: flex !important;
+  justify-content: center;
+  list-style-type: none;
+  margin: 30px auto;
+}
+/* .icons ul li{
+  margin-left:80px;
+  padding: 0;
+} */
+.icons ul li  {
+  margin-right:25px;
+  padding: 0;
+  
+}
+/* .icon ul li i{
+  color: white !important;
+} */
+
+footer {
+  background: #CDC2AE;
+  color: white;
+  padding: 16px;
+  text-align: center;
+}
+/*..............................................
+      pseduo classes
+ ...............................................*/
+
+nav li a:hover {
+  text-decoration: underline;
+}
+.images li :hover {
+  position: relative;
+  top: -4px;
+}
+form input:focus {
+  border: 4px dashed #4b4b4b;
+  outline: none;
+}
+form input:valid {
+  border: 4px solid greenyellow;
+}
+p::selection {
+  background-color: burlywood;
+  color: #f4f4f4;
+}
+p::after {
+  content: ".";
+}
+
+
+
+/*..........................................................
+              Responsev
+ ...........................................................*/
+
+@media screen and (max-width: 1400px) {
+  .welcome h2 {
+    font-size: 20px;
+  }
+  nav li {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .welcome h2 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .welcome {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+    left: 0;
+  }
+  .welcome br {
+    display: none;
+  }
+  .welcome h2 {
+    font-size: 20px;
+  }
+  .welcome span {
+    font-size: 1em;
+  }
+  .images li {
+    width: 100%;
+    margin: 20px auto;
+    display: block;
+  }
+}
+@media screen and (max-width: 560px) {
+  nav li {
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+  }
+  header {
+    position: relative;
+  }
+  nav {
+    top: 0;
+  }
+}
